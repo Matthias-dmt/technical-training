@@ -21,8 +21,6 @@ Given an array of integers, return the smallest missing positive integer.
 
 ## Approach
 
-(To fill before coding)
-
 - if no value in array return 1
 - sort the array by asc
 - filter for only > 0
