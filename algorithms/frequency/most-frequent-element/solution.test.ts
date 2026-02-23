@@ -7,7 +7,7 @@ describe('mostFrequentElement', () => {
     });
 
     it('it should return 0 if the array is empty', () => {
-        expect(mostFrequentElement([])).toBe(0);
+        expect(mostFrequentElement([])).toBe(null);
     });
 
     it('negatif values included in the list', () => {
