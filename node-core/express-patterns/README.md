@@ -5,8 +5,8 @@ Async error handling
 Problem:
 
 app.get(”/user/:id”, async (req, res) => {
-const user = await getUser(req.params.id);
-res.json(user);
+    const user = await getUser(req.params.id);
+    res.json(user);
 });
 
 If getUser throws, the request may hang.

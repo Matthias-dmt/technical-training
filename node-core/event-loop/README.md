@@ -3,7 +3,7 @@
 Execution order:
 
 1. Synchronous code (call stack)
-2. Drain all Microtasks (Promises, queueMicrotask, process.nextTick)
+2. Drain all Microtasks (process.nextTick(priority), Promises, queueMicrotask)
 3. Macrotasks (setTimeout, setInterval, I/O callbacks)
 
 JavaScript runs synchronous code first. Then it processes microtasks. After that, it executes one macrotask. After each macrotask, it drains the microtask queue again before moving to the next macrotask.
